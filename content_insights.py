@@ -514,6 +514,8 @@ The reporting agent is often the first AI workflow I build in a business, becaus
 ]
 
 REPORTS = [
+    ("the-ai-growth-stack-book.pdf", "Book", "The AI Growth Stack: the book",
+     "The full method in 13 chapters: why growth broke, the five layers in depth, cutting CAC without cutting spend, real 2026 scenarios from healthcare in the UAE and real estate in Saudi Arabia, the AI tool stack I use, a 90-day rollout, a scorecard and a prompt library."),
     ("ai-growth-stack-whitepaper.pdf", "Whitepaper", "The AI Growth Stack",
      "The five-layer framework for turning AI into a measurable growth engine: Signal, Acquire, Convert, Retain and Scale, with audit checklists, failure signs and a 90-day sequence."),
     ("saqib-ameer-case-study-compendium.pdf", "Case studies", "Growth Case Study Compendium 2017–2026",
