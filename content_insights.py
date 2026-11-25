@@ -108,7 +108,7 @@ If the conversion event fires twice, the algorithm learns that the cheapest way 
 
 > AI does not fix bad tracking. It scales it, faster and with more confidence than any human media buyer ever could.
 
-At Qmantic, a B2B SaaS analytics company, the Google Ads account was structured around clearly separated conversion objectives: free trials and sign-ups, split by market (UK, Europe, Germany, DACH and Middle East). Over the period from July 2023 to July 2024 the account recorded **6.78K clicks, 105K impressions and 1.35K conversions on €3.8K of recorded spend**. Those numbers were only meaningful, and only optimisable, because each campaign bid toward a specific, correctly measured action.
+At a German B2B SaaS analytics company I worked with, the Google Ads account was structured around clearly separated conversion objectives: free trials and sign-ups, split by market (UK, Europe, Germany, DACH and Middle East). Over the period from July 2023 to July 2024 the account recorded **6.78K clicks, 105K impressions and 1.35K conversions on €3.8K of recorded spend**. Those numbers were only meaningful, and only optimisable, because each campaign bid toward a specific, correctly measured action.
 
 ## What "Signal" actually includes
 
@@ -118,11 +118,11 @@ When I audit the Signal layer, I check five things:
 2. **Event hygiene.** No duplicates, consistent naming, and a documented event map that a new hire can read.
 3. **Value, not just volume.** Trials, demos and purchases carry a value so bidding can prefer better customers.
 4. **Cohort views.** CAC and LTV by acquisition month and channel, not blended across the whole history.
-5. **Technical foundations.** Sitemap, robots.txt, analytics coverage and page speed. At Qmantic the on-page audit documented exactly these items before any scale-up.
+5. **Technical foundations.** Sitemap, robots.txt, analytics coverage and page speed. At that analytics SaaS company, the on-page audit documented exactly these items before any scale-up.
 
 ## What changes when Signal is fixed
 
-At CHAMELAION, a SaaS company selling into the DACH region, building cohort-based attribution was the step that unlocked the rest. Once we could see CAC, LTV and blended ROAS by channel and persona, the media plan changed: budget moved toward the segments that actually paid back. The result was a **22% reduction in customer acquisition cost** and a **16% lift in MQL-to-SQL conversion**, alongside **45% organic traffic growth in four months**.
+At an AI / Web3 SaaS company in Germany selling into the DACH region, building cohort-based attribution was the step that unlocked the rest. Once we could see CAC, LTV and blended ROAS by channel and persona, the media plan changed: budget moved toward the segments that actually paid back. The result was a **22% reduction in customer acquisition cost** and a **16% lift in MQL-to-SQL conversion**, alongside **45% organic traffic growth in four months**.
 
 None of that came from a new AI tool. It came from giving the existing tools, including the platforms' own AI, a correct target.
 
@@ -145,7 +145,7 @@ The rest of the stack, Acquire, Convert, Retain and Scale, is where the visible 
 "dek": "Persona targeting, bid discipline and funnel segmentation. A step-by-step breakdown of the work behind a 22% CAC reduction for a SaaS company in the DACH market.",
 "read": 8,
 "body": """
-The fastest way to lower customer acquisition cost is to spend less. It is also the fastest way to stop growing. When I joined CHAMELAION, a SaaS company targeting regulated DACH markets, the brief was the opposite: keep investing across Google, Meta, LinkedIn and programmatic, but make each euro work harder.
+The fastest way to lower customer acquisition cost is to spend less. It is also the fastest way to stop growing. When I joined an AI / Web3 SaaS company in Germany targeting regulated DACH markets, the brief was the opposite: keep investing across Google, Meta, LinkedIn and programmatic, but make each euro work harder.
 
 Over the following months we reduced CAC by **22%**, improved MQL-to-SQL conversion by **16%** and grew organic traffic by **45% in four months**. This is how.
 
@@ -197,11 +197,11 @@ If you want to try this on your own account, start with the persona exercise. Wr
 "dek": "How a B2B SaaS analytics company turned paid search into a full lifecycle system, with market-segmented campaigns and behaviour-based email follow-up.",
 "read": 8,
 "body": """
-Most SaaS ad accounts stop at the sign-up. The campaign reports a conversion, the dashboard turns green, and then the new trial user receives one generic welcome email and silence. At Qmantic, a B2B SaaS company offering AI-powered data analysis and cloud BI, we treated the sign-up as the start of the job, not the end.
+Most SaaS ad accounts stop at the sign-up. The campaign reports a conversion, the dashboard turns green, and then the new trial user receives one generic welcome email and silence. At a German B2B SaaS company offering AI-powered data analysis and cloud BI, we treated the sign-up as the start of the job, not the end.
 
 ## The acquisition side
 
-We started with demand, not budget. Keyword research connected Qmantic's value proposition to the language prospects were already searching: AI data analysis, cloud BI, dashboards, reporting. The working sheet combined search volumes, CPC estimates and draft ad copy so research flowed straight into campaign build.
+We started with demand, not budget. Keyword research connected the product's value proposition to the language prospects were already searching: AI data analysis, cloud BI, dashboards, reporting. The working sheet combined search volumes, CPC estimates and draft ad copy so research flowed straight into campaign build.
 
 The account was then segmented on two axes:
 
@@ -353,7 +353,7 @@ If a channel claims a large share of revenue, test it. Geographic holdouts, budg
 
 ## A worked example from app growth
 
-At VANCY, a professional networking app in Germany, app growth was measured on installs and active users, not clicks. With ASO, SEO and Google and Meta app campaigns aligned to those outcomes, app users grew **60%**, installs **40%**, and app campaigns delivered **ROAS above 3.2×**. The measurement plan came first; the growth followed.
+For a professional networking app in Germany, app growth was measured on installs and active users, not clicks. With ASO, SEO and Google and Meta app campaigns aligned to those outcomes, app users grew **60%**, installs **40%**, and app campaigns delivered **ROAS above 3.2×**. The measurement plan came first; the growth followed.
 
 > Good measurement doesn't make marketing look better. It makes marketing decisions better.
 """
@@ -365,7 +365,7 @@ At VANCY, a professional networking app in Germany, app growth was measured on i
 "dek": "What worked in a regulated, high-intent category: lessons from running end-to-end digital growth for a medical center in Abu Dhabi.",
 "read": 7,
 "body": """
-Healthcare marketing in the UAE is different from selling software or sneakers. Patients search when they have a need, trust is everything, and advertising rules are strict. At House of Nature Medical Center in Abu Dhabi I own end-to-end digital growth: Google Ads, Meta lead generation, website conversion paths, content and local SEO.
+Healthcare marketing in the UAE is different from selling software or sneakers. Patients search when they have a need, trust is everything, and advertising rules are strict. At a multi-specialty medical center in Abu Dhabi I own end-to-end digital growth: Google Ads, Meta lead generation, website conversion paths, content and local SEO.
 
 Two channels do most of the work, and they do very different jobs.
 
@@ -419,7 +419,7 @@ The biggest gains in clinic lead generation usually happen after the lead arrive
 "dek": "The first 30 days decide whether a fractional or interim growth lead creates momentum or just more meetings. This is the plan I follow.",
 "read": 7,
 "body": """
-More companies now hire senior growth leadership part-time: a fractional CMO or growth lead who owns strategy and results without a full-time salary. I have worked this way with SaaS and app companies in Germany, including C-level marketing ownership at SQUIDEX.IO, where I built and ran the full go-to-market across brand, performance, content and SEO.
+More companies now hire senior growth leadership part-time: a fractional CMO or growth lead who owns strategy and results without a full-time salary. I have worked this way with SaaS and app companies in Germany, including C-level marketing ownership at a developer-tools SaaS company, where I built and ran the full go-to-market across brand, performance, content and SEO.
 
 The model works when the first month is structured. Here is how I run it.
 
@@ -457,7 +457,7 @@ Momentum matters. The first win is usually something fast and visible: fixing co
 
 ## Results this approach has supported
 
-At SQUIDEX.IO, running brand, performance, content and SEO as one engine grew brand awareness by **60% in four months** and organic sign-ups by **32%**, with automated email funnels improving trial engagement and retention.
+At that developer-tools SaaS company, running brand, performance, content and SEO as one engine grew brand awareness by **60% in four months** and organic sign-ups by **32%**, with automated email funnels improving trial engagement and retention.
 
 If you are considering fractional growth leadership, ask any candidate one question: "What will be different at the end of week four?" The answer tells you most of what you need to know.
 """
@@ -519,7 +519,7 @@ REPORTS = [
     ("ai-growth-stack-whitepaper.pdf", "Whitepaper", "The AI Growth Stack",
      "The five-layer framework for turning AI into a measurable growth engine: Signal, Acquire, Convert, Retain and Scale, with audit checklists, failure signs and a 90-day sequence."),
     ("saqib-ameer-case-study-compendium.pdf", "Case studies", "Growth Case Study Compendium 2017–2026",
-     "Seven engagements across healthcare, SaaS, apps and personal branding: the challenge, what was done and the results, from House of Nature, CHAMELAION, Qmantic, VANCY, SQUIDEX and more."),
+     "Seven engagements across healthcare, SaaS, apps and personal branding: the challenge, what was done and the results, from healthcare in the UAE to SaaS and apps in Germany, with company names kept confidential."),
     ("ai-marketing-ops-playbook.pdf", "Playbook", "The AI Marketing Operations Playbook",
      "How to give your marketing team an AI shift: which tasks to automate first, roles, guardrails, tooling choices and a practical 90-day rollout."),
 ]

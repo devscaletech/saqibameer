@@ -170,32 +170,37 @@ def stack_block(paper=False):
 
 
 CASES = [
-    dict(tag="Healthcare · Abu Dhabi", when="2025 – now", name="House of Nature Medical Center",
+    dict(tag="Real estate · Saudi Arabia", when="2026 – now", name="Real-estate growth group, Saudi Arabia",
+         role="Growth & AI transformation lead — building from scratch",
+         p="Building the marketing function for a group of real-estate companies in Saudi Arabia from zero: brand and positioning, performance media, CRM and lead handling, with AI agents and automation built in from day one rather than bolted on later.",
+         pills=["AI transformation", "Performance media", "CRM & automation", "Brand from zero"],
+         nums=[("KSA", "Saudi real-estate market"), ("0 → 1", "Marketing built from scratch"), ("AI-first", "Agents & automation from day one"), ("Now", "Active engagement")]),
+    dict(tag="Healthcare · UAE", when="2025 – now", name="Multi-specialty medical center, Abu Dhabi",
          role="Marketing Manager — owns digital growth end to end",
-         p="Leading digital growth for a multi-specialty medical center: high-intent Google Search, Meta lead generation with retargeting, website conversion paths, Google Business Profile and local SEO — all reporting into one cost-per-patient view.",
+         p="Leading digital growth in UAE healthcare, from Abu Dhabi to Dubai: high-intent Google Search, Meta lead generation with retargeting, website conversion paths, Google Business Profile and local SEO — all reporting into one cost-per-patient view.",
          pills=["Google Ads", "Meta Ads", "Local SEO", "Website CRO"],
          nums=[("+60%", "Google Ads clicks"), ("AED 15", "Meta cost per lead"), ("360°", "Ads · site · content · GBP"), ("Now", "Current leadership role")]),
-    dict(tag="AI / Web3 SaaS · Germany", when="2024 – 2026", name="CHAMELAION GmbH",
+    dict(tag="AI / Web3 SaaS · Germany", when="2024 – 2026", name="AI / Web3 SaaS company, Germany",
          role="Marketing Manager, CMO track — owned the marketing P&L",
          p="Owned the marketing P&L for a SaaS product targeting DACH markets. Rebuilt persona targeting and funnel segmentation, introduced cohort-based attribution and built an organic and community engine from zero.",
          pills=["Paid media", "Attribution", "SEO", "Community"],
          nums=[("−22%", "Customer acquisition cost"), ("+45%", "Organic traffic in 4 months"), ("0 → 1,200", "Community members"), ("+16%", "MQL → SQL conversion")]),
-    dict(tag="B2B SaaS · Germany", when="2024", name="QMANTIC SaaS GmbH",
+    dict(tag="B2B SaaS · Germany", when="2024", name="B2B AI-analytics SaaS, Germany",
          role="Marketing Manager — acquisition and lifecycle",
          p="Paired Google Ads with automated email nurture and behavioural onboarding to turn clicks into trials, and trials into paying users, at a blended CAC most SaaS teams would envy.",
          pills=["Google Ads", "Lifecycle", "Automation", "Onboarding"],
          nums=[("1,000+", "Trial sign-ups"), ("€1.40", "Blended CAC"), ("+12%", "Trial → paid"), ("+38%", "Social engagement")]),
-    dict(tag="Mobile app · EU", when="2023 – 2024", name="VANCY GmbH",
+    dict(tag="Mobile app · EU", when="2023 – 2024", name="Professional networking app, Germany",
          role="Marketing Manager — app growth across EU markets",
          p="Scaled app growth across EU markets with ASO, SEO and Google + Meta app campaigns, backed by landing-page and creative testing that kept ROAS above target as spend grew.",
          pills=["App campaigns", "ASO", "CRO", "Creative testing"],
          nums=[("3.2×+", "ROAS on app campaigns"), ("+60%", "App users"), ("+40%", "App installs"), ("+25%", "Conversion rate")]),
-    dict(tag="Developer SaaS · Germany", when="2022 – 2023", name="SQUIDEX.IO GmbH",
+    dict(tag="Developer SaaS · Germany", when="2022 – 2023", name="Developer-tools SaaS, Germany",
          role="CMO / Marketing Consultant — full go-to-market ownership",
          p="Led marketing at CMO level: go-to-market, positioning, performance, content and SEO run as one growth engine, with CEO-level reporting on pipeline and payback.",
          pills=["GTM", "Positioning", "Content", "Email funnels"],
          nums=[("+60%", "Brand awareness in 4 months"), ("+32%", "Organic sign-ups"), ("CMO", "Go-to-market ownership"), ("4 mo", "To measurable brand lift")]),
-    dict(tag="Agency · SaaS, fintech, eCommerce", when="2017 – 2022", name="HA-Technologies",
+    dict(tag="Agency · SaaS, fintech, eCommerce", when="2017 – 2022", name="International digital agency",
          role="Digital Marketing Manager — led delivery for international clients",
          p="Led 360° marketing delivery for international clients across SaaS, IT, fintech and eCommerce — owning strategy, media, reporting and client relationships across MENA, Europe and South Asia.",
          pills=["Search", "Segmentation", "Reporting", "Client leadership"],
@@ -258,7 +263,7 @@ home = f"""
 <div>
 <span class="kicker fade-up">{TITLE} · Dubai, UAE</span>
 <h1 class="h-xl"><span class="split-l"><span>Leading growth</span></span><span class="split-l"><span>in the age</span></span><span class="split-l"><span><span class="serif">of AI.</span></span></span></h1>
-<p class="lede fade-up d1">I’m Saqib Ameer. For 10+ years I’ve led growth for SaaS, eCommerce, app and healthcare brands across the UAE and Europe — owning strategy, budgets and teams, and building the data, media and AI systems that turn marketing spend into compounding revenue.</p>
+<p class="lede fade-up d1">I’m Saqib Ameer. For 10+ years I’ve led growth for SaaS, eCommerce, app, healthcare and real-estate brands across the UAE, Saudi Arabia and Europe — owning strategy, budgets and teams, and building the data, media and AI systems that turn marketing spend into compounding revenue.</p>
 <div class="hero-ctas fade-up d2"><a class="btn btn-primary" href="contact.html">Book a strategy call {ARR}</a><a class="btn" href="work.html">See the results</a></div>
 <div class="hero-meta fade-up d3"><div><b>−22%</b>Customer acquisition cost</div><div><b>3.2×+</b>ROAS on app growth</div><div><b>50+</b>Growth projects led</div></div>
 </div>
@@ -279,7 +284,7 @@ home = f"""
 <div class="stats rv">
 <div class="stat"><div class="num"><span data-to="10">0</span><em>+</em></div><p>Years leading growth across SaaS, eCommerce, fintech, apps and healthcare.</p></div>
 <div class="stat"><div class="num"><span data-to="50">0</span><em>+</em></div><p>Full-funnel growth projects led for international clients.</p></div>
-<div class="stat"><div class="num"><em>−</em><span data-to="22">0</span><em>%</em></div><p>Lower customer acquisition cost while owning the marketing P&amp;L at CHAMELAION.</p></div>
+<div class="stat"><div class="num"><em>−</em><span data-to="22">0</span><em>%</em></div><p>Lower customer acquisition cost while owning the marketing P&amp;L for a German SaaS company.</p></div>
 <div class="stat"><div class="num"><span data-to="3.2">0</span><em>×</em></div><p>ROAS sustained on Google and Meta app campaigns across EU markets.</p></div>
 </div>
 </div></section>
@@ -365,9 +370,9 @@ about = f"""
 <div><span class="kicker rv">My story</span></div>
 <div class="prose rv">
 <p class="statement" data-lit style="margin-bottom:40px">I’m as comfortable in a tag manager as I am in a boardroom. That’s rare in marketing — and it’s exactly why AI came naturally.</p>
-<p>I started in 2015 doing SEO and PPC for real-estate and local businesses in Pakistan. Within two years I was leading digital delivery at HA-Technologies, where I ran <strong>50+ growth projects</strong> for international clients across SaaS, fintech, IT and eCommerce.</p>
-<p>From 2022 I moved into leadership roles with German tech companies — first as <strong>CMO and marketing consultant at SQUIDEX.IO</strong>, then leading app growth at VANCY, acquisition and lifecycle at QMANTIC, and owning the <strong>marketing P&amp;L at CHAMELAION</strong>, where we cut CAC by 22%.</p>
-<p>Today I’m based in Dubai, leading end-to-end digital growth for House of Nature Medical Center in Abu Dhabi, and advising founders on how to put AI to work across their growth stack.</p>
+<p>I started in 2015 doing SEO and PPC for real-estate and local businesses in Pakistan. Within two years I was leading digital delivery at an international agency, where I ran <strong>50+ growth projects</strong> for international clients across SaaS, fintech, IT and eCommerce.</p>
+<p>From 2022 I moved into leadership roles with German tech companies — first as <strong>CMO and marketing consultant for a developer-tools SaaS</strong>, then leading app growth for a professional networking app, acquisition and lifecycle for a B2B analytics SaaS, and owning the <strong>marketing P&amp;L for an AI / Web3 SaaS company</strong>, where we cut CAC by 22%.</p>
+<p>Today I’m based in Dubai. I lead digital growth in UAE healthcare, and I’m building the marketing function of a real-estate group in Saudi Arabia from scratch — AI-first, with agents and automation doing the heavy lifting from day one. In between, I advise founders on how to put AI to work across their growth stack.</p>
 <p class="signature">Saqib Ameer</p>
 </div>
 </div></section>
@@ -388,13 +393,14 @@ about = f"""
 <div style="position:sticky;top:120px"><span class="kicker rv">Career</span><h2 class="h-l" style="margin-top:20px" data-split>From SEO to the C-suite</h2>
 <p class="lede rv" style="margin-top:20px">A decade of compounding skills: search, paid media, funnels, lifecycle, leadership — and now AI across all of it.</p></div>
 <div class="tl">
-<div class="tl-item"><span class="dot"></span><span class="when">2025 – now</span><div><h4>Marketing Manager · House of Nature Medical Center</h4><p>Abu Dhabi. Leading end-to-end digital growth for a multi-specialty medical center.</p><ul><li>Google Ads</li><li>Meta lead gen</li><li>Local SEO</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2024 – 2026</span><div><h4>Marketing Manager, CMO track · CHAMELAION GmbH</h4><p>Germany, remote. Owned the marketing P&amp;L for an AI / Web3 SaaS product.</p><ul><li>−22% CAC</li><li>+45% organic</li><li>Attribution</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2024</span><div><h4>Marketing Manager · QMANTIC SaaS GmbH</h4><p>Germany, remote. Paid acquisition plus lifecycle automation.</p><ul><li>1,000+ trials</li><li>€1.40 CAC</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2023 – 2024</span><div><h4>Marketing Manager · VANCY GmbH</h4><p>Germany, remote. Led app growth across EU markets.</p><ul><li>3.2×+ ROAS</li><li>+60% users</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2022 – 2023</span><div><h4>CMO / Marketing Consultant · SQUIDEX.IO GmbH</h4><p>Germany, remote. Full go-to-market ownership with CEO-level reporting.</p><ul><li>GTM</li><li>+32% sign-ups</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2017 – 2022</span><div><h4>Digital Marketing Manager · HA-Technologies</h4><p>Pakistan. Led 50+ projects for international clients.</p><ul><li>Multi-GEO</li><li>+80% client ROI</li></ul></div></div>
-<div class="tl-item"><span class="dot"></span><span class="when">2015 – 2017</span><div><h4>SEO &amp; Digital Marketing · SEO Islamabad, Estate92</h4><p>Where it started: SEO, PPC and content for real estate.</p><ul><li>+200% leads</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2026 – now</span><div><h4>Growth &amp; AI Transformation Lead · Real-estate group</h4><p>Saudi Arabia. Building marketing for several real-estate companies from scratch, AI-first.</p><ul><li>AI agents</li><li>Performance media</li><li>CRM</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2025 – now</span><div><h4>Marketing Manager · Healthcare, UAE</h4><p>Abu Dhabi &amp; Dubai. Leading end-to-end digital growth for a multi-specialty medical center.</p><ul><li>Google Ads</li><li>Meta lead gen</li><li>Local SEO</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2024 – 2026</span><div><h4>Marketing Manager, CMO track · AI / Web3 SaaS</h4><p>Germany, remote. Owned the marketing P&amp;L for an AI / Web3 SaaS product.</p><ul><li>−22% CAC</li><li>+45% organic</li><li>Attribution</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2024</span><div><h4>Marketing Manager · B2B analytics SaaS</h4><p>Germany, remote. Paid acquisition plus lifecycle automation.</p><ul><li>1,000+ trials</li><li>€1.40 CAC</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2023 – 2024</span><div><h4>Marketing Manager · Networking app</h4><p>Germany, remote. Led app growth across EU markets.</p><ul><li>3.2×+ ROAS</li><li>+60% users</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2022 – 2023</span><div><h4>CMO / Marketing Consultant · Developer-tools SaaS</h4><p>Germany, remote. Full go-to-market ownership with CEO-level reporting.</p><ul><li>GTM</li><li>+32% sign-ups</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2017 – 2022</span><div><h4>Digital Marketing Manager · International agency</h4><p>Pakistan. Led 50+ projects for international clients.</p><ul><li>Multi-GEO</li><li>+80% client ROI</li></ul></div></div>
+<div class="tl-item"><span class="dot"></span><span class="when">2015 – 2017</span><div><h4>SEO &amp; Digital Marketing · Agency &amp; real-estate portal</h4><p>Where it started: SEO, PPC and content for real estate.</p><ul><li>+200% leads</li></ul></div></div>
 </div>
 </div></section>
 
@@ -505,9 +511,9 @@ work = page_hero("Work", "Numbers I’ve <span class=\"serif\">moved.</span>",
                  "Selected results from leadership, in-house and consulting roles across healthcare, SaaS, apps, fintech and eCommerce. Every figure below comes from work I led.") + f"""
 <section style="padding-top:0"><div class="wrap">
 <div class="stats rv" style="margin-bottom:clamp(56px,8vw,96px)">
-<div class="stat"><div class="num"><span data-to="6">0</span></div><p>Companies where I led growth since 2017.</p></div>
+<div class="stat"><div class="num"><span data-to="7">0</span></div><p>Companies where I led growth since 2017.</p></div>
 <div class="stat"><div class="num"><span data-to="50">0</span><em>+</em></div><p>Growth projects delivered.</p></div>
-<div class="stat"><div class="num"><span data-to="4">0</span></div><p>Markets: UAE, Germany / DACH, EU and South Asia.</p></div>
+<div class="stat"><div class="num"><span data-to="5">0</span></div><p>Markets: UAE, Saudi Arabia, Germany / DACH, EU and South Asia.</p></div>
 <div class="stat"><div class="num"><span data-to="10">0</span><em>+</em></div><p>Years in growth and digital marketing.</p></div>
 </div>
 <div class="cases stacked">{''.join(case_html(c, i, len(CASES)) for i, c in enumerate(CASES))}</div>

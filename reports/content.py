@@ -49,7 +49,7 @@ Teams that bolt AI onto a broken funnel scale the broken parts. The AI Growth St
 - Nobody can explain how ROAS on the dashboard is calculated.
 - Budget decisions are made from a single platform's view.
 
-**In practice.** At CHAMELAION, a SaaS business targeting DACH markets, cohort analysis and funnel analytics made CAC, LTV and blended ROAS visible by channel. That visibility drove the budget changes behind a **22% reduction in CAC**. At Qmantic, campaigns bid toward clearly separated sign-up and free-trial conversions, and an on-page audit confirmed sitemap, robots.txt and analytics readiness before scale.
+**In practice.** At an AI / Web3 SaaS business in Germany targeting DACH markets, cohort analysis and funnel analytics made CAC, LTV and blended ROAS visible by channel. That visibility drove the budget changes behind a **22% reduction in CAC**. At a B2B analytics SaaS company, campaigns bid toward clearly separated sign-up and free-trial conversions, and an on-page audit confirmed sitemap, robots.txt and analytics readiness before scale.
 """),
 ("Layer 02 — Acquire", """
 **Purpose:** create and capture demand at a cost the business can sustain.
@@ -69,7 +69,7 @@ Teams that bolt AI onto a broken funnel scale the broken parts. The AI Growth St
 - One broad audience and one creative angle carry the whole account.
 - Paid search is the only channel that "works".
 
-**In practice.** Qmantic's Google Ads account was segmented by region (UK, Europe, Germany, DACH, Middle East) and intent (free trial vs sign-up). Between July 2023 and July 2024 it recorded **6.78K clicks, 105K impressions and 1.35K conversions on €3.8K** of spend. At VANCY, Google and Meta app campaigns delivered **ROAS above 3.2×**, with installs up **40%**.
+**In practice.** A German B2B analytics SaaS company's Google Ads account was segmented by region (UK, Europe, Germany, DACH, Middle East) and intent (free trial vs sign-up). Between July 2023 and July 2024 it recorded **6.78K clicks, 105K impressions and 1.35K conversions on €3.8K** of spend. For a networking app in Germany, Google and Meta app campaigns delivered **ROAS above 3.2×**, with installs up **40%**.
 """),
 ("Layer 03 — Convert", """
 **Purpose:** turn more of the traffic you already pay for into customers.
@@ -88,7 +88,7 @@ Teams that bolt AI onto a broken funnel scale the broken parts. The AI Growth St
 - Tests are run without a hypothesis or stopped early.
 - Leads wait hours or days for a reply.
 
-**In practice.** UX and A/B testing improved MQL-to-SQL conversion by **16%** at CHAMELAION; A/B-tested landing pages and journey mapping lifted conversion rates by **25%** at VANCY.
+**In practice.** UX and A/B testing improved MQL-to-SQL conversion by **16%** at a German SaaS company; A/B-tested landing pages and journey mapping lifted conversion rates by **25%** for a networking app.
 """),
 ("Layer 04 — Retain", """
 **Purpose:** make each customer worth more, so acquisition can afford to grow.
@@ -108,7 +108,7 @@ Teams that bolt AI onto a broken funnel scale the broken parts. The AI Growth St
 - Retention and LTV are not reported.
 - Every repeat sale is bought again through ads.
 
-**In practice.** At Qmantic, lifecycle templates covered confirmation, activation, demo prompts, reminders and trial expiry, and trigger-based onboarding improved **trial-to-paid conversion by 12%**. At CHAMELAION, the community grew from **0 to 1,200 active members**, with onboarding completion up **18%**.
+**In practice.** At a B2B analytics SaaS company, lifecycle templates covered confirmation, activation, demo prompts, reminders and trial expiry, and trigger-based onboarding improved **trial-to-paid conversion by 12%**. At the AI / Web3 SaaS company, the community grew from **0 to 1,200 active members**, with onboarding completion up **18%**.
 """),
 ("Layer 05 — Scale", """
 **Purpose:** let AI and automation take repetitive work off the team, so people spend time on strategy and taste.
@@ -176,23 +176,42 @@ COMPENDIUM = {
 "file": "saqib-ameer-case-study-compendium.pdf",
 "kind": "Case studies",
 "title": "Growth Case Study Compendium",
-"subtitle": "Selected engagements 2017–2026 across healthcare, SaaS, mobile apps and personal branding",
+"subtitle": "Selected engagements 2017–2026 across real estate, healthcare, SaaS, mobile apps and personal branding. Client names are kept confidential.",
 "sections": [
 ("Introduction", """
-This compendium collects selected engagements from in-house, consulting and C-level roles. Each case follows the same structure: the context, what was done, and the results. Figures are taken from the original case-study documents, platform screenshots and role records; where a figure covers a specific period, the period is stated.
+This compendium collects selected engagements from in-house, consulting and C-level roles. Client names are withheld; each organisation is described by sector and market. Each case follows the same structure: the context, what was done, and the results. Figures are taken from the original case-study documents, platform screenshots and role records; where a figure covers a specific period, the period is stated.
 
 | Organisation | Sector | Period | Role |
 |---|---|---|---|
-| House of Nature Medical Center | Healthcare, Abu Dhabi | 2025 – present | Marketing Manager / Performance Marketer |
-| CHAMELAION GmbH | Web3 / fintech SaaS, Germany | Dec 2024 – Jan 2026 | Marketing Manager, CMO track |
-| QMANTIC SaaS GmbH | B2B SaaS, Germany | Apr – Dec 2024 | Marketing Manager |
-| VANCY GmbH | Mobile app, Germany | Dec 2023 – Mar 2024 | Marketing Manager |
-| SQUIDEX.IO GmbH | Developer SaaS, Germany | Dec 2022 – Oct 2023 | CMO / Marketing Consultant |
-| Eftelya Erbasli / Gelassenerwachsen | Personal brand, Germany | 2023 – 2024 | Consultant |
-| HA-Technologies | Agency, Pakistan | 2017 – 2022 | Digital Marketing Manager |
+| Real-estate group | Real estate, Saudi Arabia | 2026 – present | Growth & AI Transformation Lead |
+| Multi-specialty medical center | Healthcare, UAE | 2025 – present | Marketing Manager / Performance Marketer |
+| AI / Web3 SaaS company | Fintech SaaS, Germany | Dec 2024 – Jan 2026 | Marketing Manager, CMO track |
+| B2B analytics SaaS | B2B SaaS, Germany | Apr – Dec 2024 | Marketing Manager |
+| Professional networking app | Mobile app, Germany | Dec 2023 – Mar 2024 | Marketing Manager |
+| Developer-tools SaaS | Developer SaaS, Germany | Dec 2022 – Oct 2023 | CMO / Marketing Consultant |
+| Coach and course creator | Personal brand, Germany | 2023 – 2024 | Consultant |
+| International digital agency | Agency, Pakistan | 2017 – 2022 | Digital Marketing Manager |
 """),
-("House of Nature Medical Center", """
-**Context.** A medical center in Abu Dhabi needed a steady flow of patient inquiries in a regulated, trust-sensitive category.
+("Real estate, Saudi Arabia: building from scratch", """
+**Context.** A group of real-estate companies in Saudi Arabia needed a marketing function built from zero, in a market moving fast under Vision 2030 and with buyers who expect speed, trust and Arabic-first communication.
+
+**What is being done**
+
+- Brand and positioning for each company, with shared infrastructure underneath.
+- Performance media across Google, Meta, Snapchat and TikTok, structured by project, buyer type and intent.
+- A CRM and lead-handling system with instant response, qualification and routing to sales.
+- AI built in from day one: agents for research, content drafts, reporting, lead enrichment and follow-up.
+
+**Status**
+
+| Item | Status |
+|---|---|
+| Engagement | Active, 2026 |
+| Approach | AI-first marketing operations, built from scratch |
+| Results | Being measured; to be published once there is a full quarter of data |
+"""),
+("Healthcare, UAE", """
+**Context.** A multi-specialty medical center in Abu Dhabi needed a steady flow of patient inquiries in a regulated, trust-sensitive category.
 
 **What was done**
 
@@ -209,7 +228,7 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | Meta cost per lead | around AED 15 |
 | Scope | End-to-end digital marketing ownership |
 """),
-("CHAMELAION GmbH", """
+("AI / Web3 SaaS, Germany", """
 **Context.** A Web3 and fintech SaaS company selling into regulated DACH markets. Full marketing P&L ownership across Google, Meta, LinkedIn and programmatic.
 
 **What was done**
@@ -230,7 +249,7 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | Onboarding completion | +18% |
 | MQL → SQL conversion | +16% |
 """),
-("QMANTIC SaaS GmbH", """
+("B2B analytics SaaS, Germany", """
 **Context.** A B2B SaaS company offering AI-powered data analysis and cloud BI. The role covered the full funnel, from market discovery and paid acquisition to lifecycle follow-up, SEO and social content.
 
 **What was done**
@@ -253,7 +272,7 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | Trial → paid conversion | +12% |
 | Social engagement | +38% |
 """),
-("VANCY GmbH", """
+("Networking app, Germany", """
 **Context.** A professional networking mobile app in Germany. Objective: increase app users and installs through digital marketing.
 
 **What was done**
@@ -277,7 +296,7 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | Video engagement | +40% |
 | Qualified leads | +30% |
 """),
-("SQUIDEX.IO GmbH", """
+("Developer-tools SaaS, Germany", """
 **Context.** A developer-focused SaaS company in Germany. C-level marketing ownership as CMO / marketing consultant.
 
 **What was done**
@@ -294,14 +313,14 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | Brand awareness | +60% in 4 months |
 | Organic sign-ups | +32% |
 """),
-("Eftelya Erbasli — personal brand", """
-**Context.** A coach and founder of Gelassenerwachsen wanted a strong personal brand and online presence.
+("Personal brand: coach, Germany", """
+**Context.** A coach and company founder in Germany wanted a strong personal brand and online presence.
 
 **What was done**
 
 - Branding guidelines, logos and brand kits for the person and the company.
 - Creative design, theme selection and a social media planner with reels.
-- Content and marketing for the High-NRG online course.
+- Content and marketing for a flagship online course.
 - Video production and editing, email outreach (Mailchimp, Brevo).
 - LinkedIn automation strategy, Google and YouTube ads, WordPress landing pages and funnel integration.
 
@@ -312,8 +331,8 @@ This compendium collects selected engagements from in-house, consulting and C-le
 | LinkedIn followers gained | 300+ |
 | LinkedIn profile views | 500+ per week |
 """),
-("HA-Technologies and earlier work", """
-**Context.** Five years leading 360° marketing projects for international clients across SaaS, IT, fintech and eCommerce, preceded by SEO and digital marketing roles at SEO Islamabad and Estate92.
+("Agency years and earlier work", """
+**Context.** Five years leading 360° marketing projects for international clients across SaaS, IT, fintech and eCommerce, preceded by SEO and digital marketing roles at an SEO agency and a real-estate portal.
 
 **Results**
 
@@ -328,7 +347,7 @@ Looking across these engagements, the same principles recur:
 
 1. **Measure first.** The biggest gains followed better tracking and cohort visibility.
 2. **Segment everything.** Market, intent and persona segmentation beat broad targeting in every account.
-3. **Own the follow-up.** Lifecycle automation turned acquisition into revenue at Qmantic, SQUIDEX and CHAMELAION.
+3. **Own the follow-up.** Lifecycle automation turned acquisition into revenue in every SaaS engagement.
 4. **Build organic alongside paid.** SEO and community reduced dependency on rising ad costs.
 5. **Report in business terms.** CAC, LTV, ROAS and payback, not impressions.
 

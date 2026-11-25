@@ -64,7 +64,7 @@ def render_html(r):
     secs = "".join(
         f'<section class="{"first" if i == 0 else ""}"><div class="secno">{head(i,t)[0]}</div><h2>{head(i,t)[1]}</h2>{md(body)}</section>'
         for i, (t, body) in enumerate(r["sections"]))
-    return f"""<!doctype html><html><head><meta charset="utf-8"><title>{r['title']}</title><style>{CSS}</style></head><body>
+    return f"""<!doctype html><html><head><meta charset="utf-8"><title>{r['title']}</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <div class="cover"><div class="rings"></div>
 <div class="brand"><span class="mark">SA</span>Saqib Ameer · AI Growth Leader</div>
 <div><div class="kind">{r['kind']}</div><h1>{r['title']}</h1><p class="sub">{r['subtitle']}</p></div>
