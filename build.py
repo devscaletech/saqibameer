@@ -1,5 +1,6 @@
 """Builds the static site in ./site from shared partials. Run: python build.py"""
 import json, pathlib
+from content_insights import ARTICLES, REPORTS, md, AUTHOR, PUBLISHED
 
 OUT = pathlib.Path(__file__).parent / "site"
 DOMAIN = "https://saqibameer.com"
@@ -64,7 +65,7 @@ def head(title, desc, path):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=3">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
 <script type="application/ld+json">{json.dumps(PERSON)}</script>
 </head>
 <body>
@@ -101,7 +102,7 @@ FOOT = f"""</main>
 <div class="big-name" aria-hidden="true">Saqib Ameer</div>
 <div class="foot-bottom"><span>© <span data-year>2026</span> Saqib Ameer. All rights reserved.</span><span>Designed &amp; built in Dubai</span><button class="to-top" aria-label="Back to top">↑</button></div>
 </div></footer>
-<script src="assets/js/site.js?v=3" defer></script>
+<script src="assets/js/site.js?v=4" defer></script>
 </body></html>
 """
 
@@ -246,6 +247,8 @@ def page_hero(kicker, h1, lede, extra=""):
 """
 
 
+HOME_POSTS = "".join((f'<a class="post rv" href="insight-{a["slug"]}.html"><span class="mono muted">{a["kicker"]}</span><div><h3>{a["title"]}</h3><p>{a["dek"]}</p></div><span class="arr">→</span></a>') for a in ARTICLES[:3])
+
 # ---------------------------------------------------------------- HOME
 home = f"""
 <section class="hero">
@@ -342,9 +345,7 @@ home = f"""
 <section style="padding-top:clamp(88px,12vw,160px)"><div class="wrap">
 <div class="sec-head"><div><span class="kicker rv">08 — Insights</span><h2 class="h-l" style="margin-top:20px" data-split>Notes from the stack</h2></div>
 <a class="btn rv" href="insights.html">All insights {ARR}</a></div>
-<a class="post rv" href="insights.html"><span class="mono muted">Playbook</span><div><h3>The AI Growth Stack: why tracking comes before AI</h3><p>The order that stops AI from scaling your mistakes.</p></div><span class="arr">→</span></a>
-<a class="post rv" href="insights.html"><span class="mono muted">Paid media</span><div><h3>How I cut CAC by 22% without cutting spend</h3><p>Persona targeting, bid rules and funnel segmentation, step by step.</p></div><span class="arr">→</span></a>
-<a class="post rv" href="insights.html"><span class="mono muted">Automation</span><div><h3>€1.40 per trial: pairing Google Ads with email nurture</h3><p>The exact sequence behind 1,000+ SaaS sign-ups.</p></div><span class="arr">→</span></a>
+{HOME_POSTS}
 </div></section>
 {cta()}
 """
@@ -515,27 +516,58 @@ work = page_hero("Work", "Numbers I’ve <span class=\"serif\">moved.</span>",
 """
 
 # ---------------------------------------------------------------- INSIGHTS
-POSTS = [("Playbook", "The AI Growth Stack: why tracking comes before AI", "The order that stops AI from scaling your mistakes."),
-         ("Paid media", "How I cut CAC by 22% without cutting spend", "Persona targeting, bid rules and funnel segmentation, step by step."),
-         ("Automation", "€1.40 per trial: pairing Google Ads with email nurture", "The exact sequence behind 1,000+ SaaS sign-ups."),
-         ("AI ops", "5 marketing tasks I hand to AI agents every week", "Reporting, research, briefs, QA and lead handling."),
-         ("eCommerce", "Tracking after iOS: a practical GA4 + server-side setup", "What to measure, and what to stop trusting."),
-         ("Healthcare", "Lead gen for clinics: Google Search vs Meta lead forms", "What worked in a regulated, high-intent category."),
-         ("Leadership", "What a fractional growth leader should own in month one", "The first 30 days, from audit to first wins."),
-         ("AI ops", "Building an AI reporting agent your CEO will actually read", "From raw platform data to a one-page Monday memo.")]
-posts = "".join(f'<a class="post rv" href="contact.html"><span class="mono muted">{k}</span><div><h3>{t}</h3><p>{d} <span class="dim">· Coming soon</span></p></div><span class="arr">→</span></a>' for k, t, d in POSTS)
-insights = page_hero("Insights", "Practical AI for <span class=\"serif\">growth leaders.</span>",
-                     "Playbooks, teardowns and experiments from the AI Growth Stack. No hype — just what’s working in real accounts.") + f"""
+def post_link(a):
+    return (f'<a class="post rv" href="insight-{a["slug"]}.html"><span class="mono muted">{a["kicker"]}</span>'
+            f'<div><h3>{a["title"]}</h3><p>{a["dek"]} <span class="dim">· {a["read"]} min read</span></p></div><span class="arr">→</span></a>')
+
+def report_card(r):
+    f, kind, title, desc = r
+    return (f'<a class="report rv" href="assets/pdf/{f}" target="_blank" rel="noopener"><span class="mono">{kind} · PDF</span>'
+            f'<h3>{title}</h3><p>{desc}</p><span class="dl">Download {ARR}</span></a>')
+
+posts = "".join(post_link(a) for a in ARTICLES)
+reports = "".join(report_card(r) for r in REPORTS)
+insights = page_hero("Insights", "Research and playbooks for <span class=\"serif\">growth leaders.</span>",
+                     "Frameworks, case studies and field notes from the AI Growth Stack. Written from real accounts, with every number traceable to the work behind it.") + f"""
+<section style="padding-top:0" id="research"><div class="wrap">
+<div class="sec-head"><div><span class="kicker rv">Research &amp; reports</span><h2 class="h-l rv" style="margin-top:20px" data-split>Download the thinking.</h2></div>
+<p class="lede rv" style="max-width:44ch">Free PDFs. No email gate. Share them with your team.</p></div>
+<div class="reports">{reports}</div>
+</div></section>
 <section style="padding-top:0"><div class="wrap">
-<div class="card rv" style="display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:clamp(28px,4vw,56px)">
-<div><span class="kicker">Newsletter</span><h2 class="h-l" style="margin-top:16px">The AI Growth Memo</h2><p style="margin-top:14px">One practical AI + growth idea, every other week. Written for founders and marketing leaders. Launching soon.</p></div>
-<form class="form" onsubmit="event.preventDefault();location.href='mailto:{EMAIL}?subject=Add%20me%20to%20The%20AI%20Growth%20Memo'"><div class="field"><label for="nl">Email</label><input id="nl" type="email" placeholder="you@company.com" required></div><button class="btn btn-primary" type="submit" style="justify-self:start">Join the waitlist {ARR}</button></form>
+<div class="sec-head"><div><span class="kicker rv">Articles</span><h2 class="h-l rv" style="margin-top:20px" data-split>Field notes.</h2></div></div>
+<div>{posts}</div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+<div class="card rv" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:40px;align-items:center;padding:clamp(28px,4vw,56px)">
+<div><span class="kicker">Newsletter</span><h2 class="h-l" style="margin-top:16px">The AI Growth Memo</h2><p style="margin-top:14px">One practical AI and growth idea, every other week, for founders and marketing leaders. Add your email and I’ll send new essays and reports as they’re published.</p></div>
+<form class="form" onsubmit="event.preventDefault();location.href='mailto:{EMAIL}?subject=Subscribe%20me%20to%20The%20AI%20Growth%20Memo'"><div class="field"><label for="nl">Email</label><input id="nl" type="email" placeholder="you@company.com" required></div><button class="btn btn-primary" type="submit" style="justify-self:start">Subscribe {ARR}</button></form>
 </div>
-<div style="margin-top:64px">{posts}</div>
 </div></section>
 <section style="padding-top:0"><div class="wrap"><div class="tag-cloud rv">
 <span>AI agents</span><span>Performance marketing</span><span>GA4</span><span>Attribution</span><span>Lifecycle</span><span>CRO</span><span>Growth leadership</span><span>SaaS</span><span>eCommerce</span><span>Healthcare marketing</span><span>Automation</span><span>Creative testing</span>
 </div></div></section>
+{cta()}
+"""
+
+def article_page(a):
+    i = ARTICLES.index(a)
+    nxt = ARTICLES[(i + 1) % len(ARTICLES)]
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["dek"],
+          "author": {"@type": "Person", "name": AUTHOR, "url": DOMAIN}, "publisher": {"@type": "Person", "name": AUTHOR},
+          "datePublished": "2026-11-25", "mainEntityOfPage": f"{DOMAIN}/insight-{a['slug']}"}
+    return f"""
+<section class="page-hero article-hero"><div class="grid-bg"></div><div class="wrap" style="position:relative">
+<div class="crumb fade-up"><a href="index.html">Home</a><span>/</span><a href="insights.html">Insights</a><span>/</span><span>{a['kicker']}</span></div>
+<h1 class="h-xl" data-split style="max-width:20ch">{a['title']}</h1>
+<p class="lede fade-up d2">{a['dek']}</p>
+<div class="byline fade-up d3"><span class="logo-mark">SA</span><div><b>{AUTHOR}</b><span>AI Growth Leader · {PUBLISHED} · {a['read']} min read</span></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap"><article class="article rv">{md(a['body'])}</article>
+<div class="article-foot rv"><div><span class="mono muted">Next article</span><a class="next" href="insight-{nxt['slug']}.html">{nxt['title']} {ARR}</a></div>
+<a class="btn" href="insights.html">All insights</a></div>
+</div></section>
+<script type="application/ld+json">{json.dumps(ld)}</script>
 {cta()}
 """
 
@@ -595,7 +627,7 @@ PAGES = [
     ("insights.html", "Insights", "Practical AI and growth playbooks from Saqib Ameer, AI Growth Leader in Dubai.", insights),
     ("contact.html", "Contact", f"Contact Saqib Ameer, AI Growth Leader in Dubai. Email {EMAIL} or book a strategy call.", contact),
     ("404.html", "Not found", "Page not found.", notfound),
-]
+] + [(f"insight-{a['slug']}.html", a["title"], a["dek"], article_page(a)) for a in ARTICLES]
 
 if __name__ == "__main__":
     for p in PAGES:

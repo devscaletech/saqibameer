@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Building an AI reporting agent your CEO will actually read · Saqib Ameer</title>
+<meta name="description" content="From raw platform data to a one-page Monday memo. A practical design for an AI reporting workflow, including the guardrails that keep it honest.">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="author" content="Saqib Ameer">
+<link rel="canonical" href="https://saqibameer.com/insight-ai-reporting-agent-ceo-memo">
+<meta property="og:title" content="Building an AI reporting agent your CEO will actually read · Saqib Ameer">
+<meta property="og:description" content="From raw platform data to a one-page Monday memo. A practical design for an AI reporting workflow, including the guardrails that keep it honest.">
+<meta property="og:image" content="https://saqibameer.com/assets/img/og.jpg">
+<meta property="og:url" content="https://saqibameer.com/insight-ai-reporting-agent-ceo-memo">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Saqib Ameer", "jobTitle": "AI Growth Leader", "url": "https://saqibameer.com", "email": "mailto:hello@saqibameer.com", "image": "https://saqibameer.com/assets/img/og.jpg", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "sameAs": ["https://www.linkedin.com/in/saqibameer", "https://github.com/saqi097"], "alumniOf": ["PMAS Arid Agriculture University Rawalpindi", "University of the Punjab"], "knowsAbout": ["AI marketing", "Growth leadership", "Performance marketing", "Marketing automation", "Marketing analytics", "eCommerce", "SaaS", "Go-to-market strategy"]}</script>
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="l-top"><span>Saqib Ameer</span><span>AI Growth Leader · Dubai</span></div><div class="l-name"><span>Saqib Ameer</span></div><div class="l-bot"><span class="dim" style="font-size:13px">Growth, led by data.<br>Multiplied by AI.</span><span class="l-count">000</span></div><div class="l-bar"></div></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="pt" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div><div class="cursor-dot" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+<a class="logo" href="index.html" aria-label="Saqib Ameer home"><span class="logo-mark">SA</span><span>Saqib Ameer<small>AI Growth Leader</small></span></a>
+<nav class="nav-links" id="menu" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="stack.html">AI Growth Stack</a><a href="work.html">Work</a><a href="insights.html">Insights</a><a class="btn btn-primary btn-sm nav-cta" href="contact.html">Let’s talk <span class="arr">→</span></a></nav>
+<button class="burger" aria-label="Menu" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+</div></header>
+<main>
+
+<section class="page-hero article-hero"><div class="grid-bg"></div><div class="wrap" style="position:relative">
+<div class="crumb fade-up"><a href="index.html">Home</a><span>/</span><a href="insights.html">Insights</a><span>/</span><span>AI ops</span></div>
+<h1 class="h-xl" data-split style="max-width:20ch">Building an AI reporting agent your CEO will actually read</h1>
+<p class="lede fade-up d2">From raw platform data to a one-page Monday memo. A practical design for an AI reporting workflow, including the guardrails that keep it honest.</p>
+<div class="byline fade-up d3"><span class="logo-mark">SA</span><div><b>Saqib Ameer</b><span>AI Growth Leader · November 2026 · 8 min read</span></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap"><article class="article rv"><p>Most marketing reports are too long, arrive too late and answer questions nobody asked. Leadership wants three things on Monday morning: what happened, why, and what we are doing about it. That is exactly the kind of structured summarising AI is good at, if you design the workflow properly.</p>
+<h2>The output first</h2>
+<p>Start by designing the memo, not the pipeline. A good memo fits on one page:</p>
+<ol><li><strong>Headline:</strong> one sentence on the week, for example "Revenue on target; paid social efficiency slipped; fix in progress."</li><li><strong>Scoreboard:</strong> five to eight numbers against target and last period (spend, revenue, CAC, ROAS or MER, leads, conversion rate).</li><li><strong>What changed and why:</strong> three bullets at most.</li><li><strong>Actions:</strong> what the team is doing, who owns it, and what needs a decision.</li></ol>
+<h2>The pipeline</h2>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>What happens</th><th>Who or what does it</th></tr></thead><tbody><tr><td>Collect</td><td>Pull data from ad platforms, GA4, CRM and store</td><td>Scheduled connectors</td></tr><tr><td>Reconcile</td><td>Compare platform numbers with the business source of truth</td><td>Rules plus agent checks</td></tr><tr><td>Diagnose</td><td>Flag movements beyond normal ranges and look for likely causes</td><td>AI agent</td></tr><tr><td>Draft</td><td>Write the memo in the agreed format</td><td>AI agent</td></tr><tr><td>Review</td><td>Check facts, add context, approve actions</td><td>Human growth lead</td></tr><tr><td>Send</td><td>Deliver to leadership at a fixed time</td><td>Automation</td></tr></tbody></table></div>
+<h2>Guardrails that keep it honest</h2>
+<ul><li><strong>Every number has a source.</strong> The memo links each figure to where it came from.</li><li><strong>The agent proposes; people decide.</strong> It can suggest a budget shift but cannot make one.</li><li><strong>Anomalies need evidence.</strong> "CPA rose because of creative fatigue" must point to the creatives and their trend.</li><li><strong>Same format every week.</strong> Consistency makes changes visible.</li></ul>
+<h2>An illustrative weekly run</h2>
+<p><em>Example with sample data, not a client report:</em> the agent syncs four sources, notices that prospecting CPA on Meta rose sharply week on week while three ads have run for more than a month, drafts six new variants based on the best performers, proposes moving part of the budget to brand search, queues a win-back flow for lapsed buyers and sends the memo at 09:00, waiting for a human to approve three actions.</p>
+<h2>Why it works</h2>
+<blockquote>Leaders don't need more data. They need a reliable judgement on the data, delivered at the same time every week.</blockquote>
+<p>The reporting agent is often the first AI workflow I build in a business, because it immediately frees hours and it exposes every weakness in tracking. If the memo looks wrong, the Signal layer needs work, and now everyone can see it.</p>
+<p><em>The full playbook, including a 90-day rollout plan, is available as a <a class="link" href="assets/pdf/ai-marketing-ops-playbook.pdf">PDF download</a>.</em></p></article>
+<div class="article-foot rv"><div><span class="mono muted">Next article</span><a class="next" href="insight-ai-growth-stack-tracking-before-ai.html">The AI Growth Stack: why tracking comes before AI <span class="arr">→</span></a></div>
+<a class="btn" href="insights.html">All insights</a></div>
+</div></section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Building an AI reporting agent your CEO will actually read", "description": "From raw platform data to a one-page Monday memo. A practical design for an AI reporting workflow, including the guardrails that keep it honest.", "author": {"@type": "Person", "name": "Saqib Ameer", "url": "https://saqibameer.com"}, "publisher": {"@type": "Person", "name": "Saqib Ameer"}, "datePublished": "2026-11-25", "mainEntityOfPage": "https://saqibameer.com/insight-ai-reporting-agent-ceo-memo"}</script>
+<section><div class="wrap"><div class="cta-box rv"><span class="orbit" aria-hidden="true"></span><span class="orbit o2" aria-hidden="true"></span>
+<span class="kicker" style="position:relative">Now booking strategy calls</span>
+<h2 class="h-xl" style="position:relative">Let’s make AI pay for itself.</h2>
+<p class="lede" style="position:relative">Tell me where growth is stuck. In a 30-minute call we’ll map where AI, paid media and automation can move your numbers first — and what it’s worth.</p>
+<div class="hero-ctas" style="position:relative"><a class="btn btn-primary" href="contact.html">Book a strategy call <span class="arr">→</span></a><a class="btn" href="https://www.linkedin.com/in/saqibameer" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+</div></div></section>
+
+</main>
+<footer><div class="wrap">
+<div class="foot-cta"><div><span class="kicker rv">Open to new mandates · 2026</span><h2 class="h-l rv" style="margin-top:20px" data-split>Have a growth problem worth solving?</h2></div>
+<div class="hero-ctas rv"><a class="btn btn-primary" href="contact.html">Start a conversation <span class="arr">→</span></a><a class="btn" href="mailto:hello@saqibameer.com">hello@saqibameer.com</a></div></div>
+<div class="foot">
+<div><a class="logo" href="index.html"><span class="logo-mark">SA</span><span>Saqib Ameer<small>AI Growth Leader</small></span></a>
+<p class="muted" style="margin-top:20px;max-width:36ch;font-size:14px">I lead growth for DTC, eCommerce and SaaS brands — building the data, media, automation and AI systems that make revenue compound.</p></div>
+<div><h5>Explore</h5><a href="about.html">About</a><a href="services.html">Services</a><a href="stack.html">AI Growth Stack</a><a href="work.html">Work</a><a href="insights.html">Insights</a></div>
+<div><h5>Connect</h5><a href="https://www.linkedin.com/in/saqibameer" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/saqi097" target="_blank" rel="noopener">GitHub ↗</a><a href="mailto:hello@saqibameer.com">Email</a><a href="contact.html">Book a call</a></div>
+<div><h5>Dubai, UAE</h5><span class="t">Local time <b class="clock" style="color:var(--text);font-weight:500"></b> (GMT+4)</span><span class="t">Working worldwide</span><span class="t">English · Urdu</span></div>
+</div>
+<div class="big-name" aria-hidden="true">Saqib Ameer</div>
+<div class="foot-bottom"><span>© <span data-year>2026</span> Saqib Ameer. All rights reserved.</span><span>Designed &amp; built in Dubai</span><button class="to-top" aria-label="Back to top">↑</button></div>
+</div></footer>
+<script src="assets/js/site.js?v=4" defer></script>
+</body></html>

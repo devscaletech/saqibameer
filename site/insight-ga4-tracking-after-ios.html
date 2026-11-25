@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tracking after iOS: a practical GA4 measurement plan · Saqib Ameer</title>
+<meta name="description" content="Privacy changes broke a lot of attribution. Here is a practical way to rebuild measurement you can make money decisions on, and what to stop trusting.">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="author" content="Saqib Ameer">
+<link rel="canonical" href="https://saqibameer.com/insight-ga4-tracking-after-ios">
+<meta property="og:title" content="Tracking after iOS: a practical GA4 measurement plan · Saqib Ameer">
+<meta property="og:description" content="Privacy changes broke a lot of attribution. Here is a practical way to rebuild measurement you can make money decisions on, and what to stop trusting.">
+<meta property="og:image" content="https://saqibameer.com/assets/img/og.jpg">
+<meta property="og:url" content="https://saqibameer.com/insight-ga4-tracking-after-ios">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Saqib Ameer", "jobTitle": "AI Growth Leader", "url": "https://saqibameer.com", "email": "mailto:hello@saqibameer.com", "image": "https://saqibameer.com/assets/img/og.jpg", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "sameAs": ["https://www.linkedin.com/in/saqibameer", "https://github.com/saqi097"], "alumniOf": ["PMAS Arid Agriculture University Rawalpindi", "University of the Punjab"], "knowsAbout": ["AI marketing", "Growth leadership", "Performance marketing", "Marketing automation", "Marketing analytics", "eCommerce", "SaaS", "Go-to-market strategy"]}</script>
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="l-top"><span>Saqib Ameer</span><span>AI Growth Leader · Dubai</span></div><div class="l-name"><span>Saqib Ameer</span></div><div class="l-bot"><span class="dim" style="font-size:13px">Growth, led by data.<br>Multiplied by AI.</span><span class="l-count">000</span></div><div class="l-bar"></div></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="pt" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div><div class="cursor-dot" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+<a class="logo" href="index.html" aria-label="Saqib Ameer home"><span class="logo-mark">SA</span><span>Saqib Ameer<small>AI Growth Leader</small></span></a>
+<nav class="nav-links" id="menu" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="stack.html">AI Growth Stack</a><a href="work.html">Work</a><a href="insights.html">Insights</a><a class="btn btn-primary btn-sm nav-cta" href="contact.html">Let’s talk <span class="arr">→</span></a></nav>
+<button class="burger" aria-label="Menu" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+</div></header>
+<main>
+
+<section class="page-hero article-hero"><div class="grid-bg"></div><div class="wrap" style="position:relative">
+<div class="crumb fade-up"><a href="index.html">Home</a><span>/</span><a href="insights.html">Insights</a><span>/</span><span>eCommerce</span></div>
+<h1 class="h-xl" data-split style="max-width:20ch">Tracking after iOS: a practical GA4 measurement plan</h1>
+<p class="lede fade-up d2">Privacy changes broke a lot of attribution. Here is a practical way to rebuild measurement you can make money decisions on, and what to stop trusting.</p>
+<div class="byline fade-up d3"><span class="logo-mark">SA</span><div><b>Saqib Ameer</b><span>AI Growth Leader · November 2026 · 8 min read</span></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap"><article class="article rv"><p>Since Apple's App Tracking Transparency and the wider move away from third-party cookies, every marketer has seen the same symptoms: platform-reported conversions that don't match the shop, ROAS that swings for no reason, and audiences that shrink every quarter. The response should not be panic. It should be a measurement plan.</p>
+<p>This is the approach I use for eCommerce and app brands. It is deliberately practical.</p>
+<h2>Principle 1: Decide what is true before you decide what to optimise</h2>
+<p>Your store or CRM knows how many orders and how much revenue came in. That is the truth. GA4 and the ad platforms are <em>models</em> of that truth. Every report should be reconciled back to it.</p>
+<h2>Principle 2: Measure fewer things, properly</h2>
+<p>Most accounts I audit track dozens of events and trust none of them. A strong plan has a short list:</p>
+<div class="table-wrap"><table><thead><tr><th>Stage</th><th>Event</th><th>Notes</th></tr></thead><tbody><tr><td>Interest</td><td>view_item, add_to_cart</td><td>For audiences and diagnostics</td></tr><tr><td>Intent</td><td>begin_checkout</td><td>Key leading indicator</td></tr><tr><td>Outcome</td><td>purchase with value</td><td>The only event most campaigns should bid on</td></tr><tr><td>Retention</td><td>repeat purchase</td><td>Feeds LTV and lifecycle</td></tr></tbody></table></div>
+<h2>Principle 3: Send first-party data back to the platforms</h2>
+<p>Server-side tagging and conversion APIs send conversion data from your server rather than relying only on the visitor's browser. Combined with consented first-party data, this restores much of the signal the platforms need to optimise. Set-up details vary by platform, but the principle is the same: the most reliable data you own should be the data the algorithms learn from.</p>
+<h2>Principle 4: Use more than one lens</h2>
+<p>No single attribution model is "right". I use three views side by side:</p>
+<ol><li><strong>Platform view</strong> for in-platform optimisation decisions.</li><li><strong>GA4 / analytics view</strong> for cross-channel comparison.</li><li><strong>Business view</strong>: blended CAC and MER (total revenue divided by total marketing spend) by month and by cohort.</li></ol>
+<p>When the three disagree, the business view wins budget decisions.</p>
+<h2>Principle 5: Test incrementality when the money is big</h2>
+<p>If a channel claims a large share of revenue, test it. Geographic holdouts, budget pauses and on/off tests are imperfect but honest. They tell you what would have happened without the spend.</p>
+<h2>What to stop trusting</h2>
+<ul><li>View-through conversions reported as if they were clicks.</li><li>ROAS from a single platform used to justify total budget.</li><li>Any dashboard nobody can explain the source of.</li></ul>
+<h2>A worked example from app growth</h2>
+<p>At VANCY, a professional networking app in Germany, app growth was measured on installs and active users, not clicks. With ASO, SEO and Google and Meta app campaigns aligned to those outcomes, app users grew <strong>60%</strong>, installs <strong>40%</strong>, and app campaigns delivered <strong>ROAS above 3.2×</strong>. The measurement plan came first; the growth followed.</p>
+<blockquote>Good measurement doesn't make marketing look better. It makes marketing decisions better.</blockquote></article>
+<div class="article-foot rv"><div><span class="mono muted">Next article</span><a class="next" href="insight-clinic-lead-generation-google-vs-meta.html">Lead generation for clinics: Google Search vs Meta lead forms <span class="arr">→</span></a></div>
+<a class="btn" href="insights.html">All insights</a></div>
+</div></section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Tracking after iOS: a practical GA4 measurement plan", "description": "Privacy changes broke a lot of attribution. Here is a practical way to rebuild measurement you can make money decisions on, and what to stop trusting.", "author": {"@type": "Person", "name": "Saqib Ameer", "url": "https://saqibameer.com"}, "publisher": {"@type": "Person", "name": "Saqib Ameer"}, "datePublished": "2026-11-25", "mainEntityOfPage": "https://saqibameer.com/insight-ga4-tracking-after-ios"}</script>
+<section><div class="wrap"><div class="cta-box rv"><span class="orbit" aria-hidden="true"></span><span class="orbit o2" aria-hidden="true"></span>
+<span class="kicker" style="position:relative">Now booking strategy calls</span>
+<h2 class="h-xl" style="position:relative">Let’s make AI pay for itself.</h2>
+<p class="lede" style="position:relative">Tell me where growth is stuck. In a 30-minute call we’ll map where AI, paid media and automation can move your numbers first — and what it’s worth.</p>
+<div class="hero-ctas" style="position:relative"><a class="btn btn-primary" href="contact.html">Book a strategy call <span class="arr">→</span></a><a class="btn" href="https://www.linkedin.com/in/saqibameer" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+</div></div></section>
+
+</main>
+<footer><div class="wrap">
+<div class="foot-cta"><div><span class="kicker rv">Open to new mandates · 2026</span><h2 class="h-l rv" style="margin-top:20px" data-split>Have a growth problem worth solving?</h2></div>
+<div class="hero-ctas rv"><a class="btn btn-primary" href="contact.html">Start a conversation <span class="arr">→</span></a><a class="btn" href="mailto:hello@saqibameer.com">hello@saqibameer.com</a></div></div>
+<div class="foot">
+<div><a class="logo" href="index.html"><span class="logo-mark">SA</span><span>Saqib Ameer<small>AI Growth Leader</small></span></a>
+<p class="muted" style="margin-top:20px;max-width:36ch;font-size:14px">I lead growth for DTC, eCommerce and SaaS brands — building the data, media, automation and AI systems that make revenue compound.</p></div>
+<div><h5>Explore</h5><a href="about.html">About</a><a href="services.html">Services</a><a href="stack.html">AI Growth Stack</a><a href="work.html">Work</a><a href="insights.html">Insights</a></div>
+<div><h5>Connect</h5><a href="https://www.linkedin.com/in/saqibameer" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/saqi097" target="_blank" rel="noopener">GitHub ↗</a><a href="mailto:hello@saqibameer.com">Email</a><a href="contact.html">Book a call</a></div>
+<div><h5>Dubai, UAE</h5><span class="t">Local time <b class="clock" style="color:var(--text);font-weight:500"></b> (GMT+4)</span><span class="t">Working worldwide</span><span class="t">English · Urdu</span></div>
+</div>
+<div class="big-name" aria-hidden="true">Saqib Ameer</div>
+<div class="foot-bottom"><span>© <span data-year>2026</span> Saqib Ameer. All rights reserved.</span><span>Designed &amp; built in Dubai</span><button class="to-top" aria-label="Back to top">↑</button></div>
+</div></footer>
+<script src="assets/js/site.js?v=4" defer></script>
+</body></html>
