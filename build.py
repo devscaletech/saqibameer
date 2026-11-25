@@ -10,7 +10,8 @@ TITLE = "AI Growth Leader"
 IMG = {
     "hero": "assets/img/saqib-headshot-cut-bw.webp",
     "hero_full": False,          # True when hero is a full-bleed photo (AI portrait)
-    "band": "assets/img/saqib-night-bw.webp",
+    "band": "assets/img/ai/ai-workshop.webp",
+    "workshop": "assets/img/ai/ai-workshop.webp",
     "about": "assets/img/saqib-lean-cut-bw.webp",
     "about_cut": True,
     "services": "assets/img/saqib-standing-cut-bw.webp",
@@ -63,7 +64,7 @@ def head(title, desc, path):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=3">
 <script type="application/ld+json">{json.dumps(PERSON)}</script>
 </head>
 <body>
@@ -100,7 +101,7 @@ FOOT = f"""</main>
 <div class="big-name" aria-hidden="true">Saqib Ameer</div>
 <div class="foot-bottom"><span>© <span data-year>2026</span> Saqib Ameer. All rights reserved.</span><span>Designed &amp; built in Dubai</span><button class="to-top" aria-label="Back to top">↑</button></div>
 </div></footer>
-<script src="assets/js/site.js" defer></script>
+<script src="assets/js/site.js?v=3" defer></script>
 </body></html>
 """
 
@@ -299,9 +300,10 @@ home = f"""
 </div></section>
 
 <section style="padding:clamp(24px,4vw,48px) 0 0"><div class="wrap">
-<div class="band rv" data-cursor="Dubai"><div class="band-img" data-speed=".35"><img src="{IMG['band']}" alt="Saqib Ameer in Downtown Dubai at night" loading="lazy"></div>
-<div class="in"><span class="kicker">Based in Dubai</span><h2 class="h-l" style="margin-top:18px">Built in Dubai.<br><span class="serif">Shipped worldwide.</span></h2>
-<p class="lede" style="margin-top:18px">Remote-first since 2022, leading growth for teams in Germany, the UAE and beyond. Same time zone as the Gulf, hours ahead of Europe — so work moves while others sleep.</p></div></div>
+<div class="band side rv" data-cursor="Workshops"><div class="band-img" data-speed=".35"><img src="{IMG['band']}" alt="Saqib Ameer leading a growth strategy workshop at a whiteboard" loading="lazy"></div>
+<div class="in"><span class="kicker">Workshops &amp; leadership</span><h2 class="h-l" style="margin-top:18px">I lead the room,<br><span class="serif">not just the account.</span></h2>
+<p class="lede" style="margin-top:18px">From funnel teardowns at the whiteboard to AI enablement for whole marketing teams, I help people see where growth comes from — then build the system with them. Based in Dubai, working with teams in the UAE, Germany and beyond.</p>
+<div class="hero-ctas" style="margin-top:28px"><a class="btn btn-primary" href="contact.html">Book a team workshop {ARR}</a></div></div></div>
 </div></section>
 
 {marquee(["Strategy", "Data", "Media", "Automation", "AI", "Leadership"], big=True)}
@@ -374,6 +376,12 @@ about = f"""
 {frame(IMG['g2'], 'Saqib Ameer in Dubai', cap='Dubai')}
 {frame(IMG['g3'], 'Saqib Ameer in Downtown Dubai', cap='Downtown Dubai')}
 </div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="band side rv" data-cursor="Workshops"><div class="band-img" data-speed=".35"><img src="{IMG['workshop']}" alt="Saqib Ameer leading a growth strategy workshop at a whiteboard" loading="lazy"></div>
+<div class="in"><span class="kicker">Talks &amp; workshops</span><h2 class="h-l" style="margin-top:18px">Strategy is a team sport.</h2>
+<p class="lede" style="margin-top:18px">I run hands-on sessions for founders and marketing teams: the AI Growth Stack, AI for performance marketing, and tracking that survives privacy changes.</p></div></div>
+</div></section>
 
 <section class="paper rounded-top"><div class="wrap split" style="align-items:start">
 <div style="position:sticky;top:120px"><span class="kicker rv">Career</span><h2 class="h-l" style="margin-top:20px" data-split>From SEO to the C-suite</h2>

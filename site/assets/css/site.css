@@ -442,3 +442,9 @@ footer{padding:96px 0 32px;background:var(--bg);position:relative;overflow:hidde
   .loader{display:none}
 }
 .chips label{display:inline-block;margin:0;font:inherit;letter-spacing:0;text-transform:none;color:inherit}
+.band.side .band-img{left:34%}
+.band.side .band-img img{object-position:40% 30%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 28%);mask-image:linear-gradient(90deg,transparent,#000 28%)}
+.band.side::after{background:linear-gradient(90deg,rgba(10,10,10,.85),rgba(10,10,10,.2) 45%,transparent 70%),linear-gradient(0deg,rgba(10,10,10,.55),transparent 40%)}
+.band.side .in{align-self:center;max-width:520px}
+@media (max-width:760px){.band.side{min-height:680px}.band.side .band-img{left:0;bottom:auto;height:70%;inset:0 0 auto 0}.band.side .band-img img{object-position:45% 20%;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}.band.side::after{background:linear-gradient(0deg,rgba(10,10,10,.95) 35%,transparent 70%)}.band.side .in{align-self:flex-end}}
+@media (max-width:760px){.band.side{min-height:800px}.band.side .band-img{height:56%}}
