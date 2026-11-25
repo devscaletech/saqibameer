@@ -59,7 +59,7 @@ def render_html(r):
 <div class="brand"><span class="mark">SA</span>Saqib Ameer · AI Growth Leader</div>
 <div><div class="kind">{r['kind']}</div><h1>{r['title']}</h1><p class="sub">{r['subtitle']}</p></div>
 <div class="meta"><span>November 2026 · Edition 1</span><span>saqibameer.com · hello@saqibameer.com</span></div></div>
-<div class="toc"><div class="secno">Contents</div><h2>Inside this {r['kind'].lower().rstrip('s')}</h2><ol>{toc}</ol>
+<div class="toc"><div class="secno">Contents</div><h2>Inside this report</h2><ol>{toc}</ol>
 <p class="endnote">All figures come from engagements led by the author and are reported as recorded in the original case studies, platform data and role records. Results depend on context; no outcome is guaranteed. © 2026 Saqib Ameer. You may share this document unchanged with attribution.</p></div>
 {secs}</body></html>"""
 
